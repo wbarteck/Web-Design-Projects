@@ -1,0 +1,62 @@
+body {
+	background-color: #f0eee4;
+}
+#intro {
+	width:550px;
+	height:200px;
+	margin: 50px auto;
+	background-color:#fff;
+	padding:14px;
+	text-align: center;
+	border-radius: 15px;
+}
+
+#intro button {
+	width: 200px;
+	margin: 50px auto;
+	position:relative;
+}
+
+#game {
+	width:768px;
+	height: 625px;
+	background-color:#fff;
+	padding:14px;
+	border-radius: 15px;
+	margin: 50px auto;
+	border: solid 1px #ccc;
+}
+
+table {
+	width: 90%;
+	margin: 0 auto;
+	table-layout: fixed;
+	text-align: center;
+}
+
+input {
+	width: 100%;
+}
+
+.state {
+	border-radius: 4px;
+	color: white;
+	float: left;
+	display: inline;
+	margin: 5px;
+	padding: 2px 4px;
+	background-color: #dd4455;
+}
+.state:nth-child(2n) {
+	background-color: #6655dd;
+}
+.missed {
+	background-color: #646464 !important;
+}
+
+#container {
+	height: 450px;
+}
+#over {
+	height: 450px;
+}

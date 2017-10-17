@@ -1,0 +1,77 @@
+<!-- 
+    Here is a starting point for the project. 
+    jQuery and a index.js file have been included for you.
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>50 State Game</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+		<header class="container-fluid bg-inverse text-white p-2">
+			<h3 class="float-left" style="inline-block">50 States Guessing Game</h3>
+			<h3 class="float-right" style="inline-block">William Barteck</h3>
+			<div class="clearfix"></div>
+		</header>
+    <!-- 
+    1. Implement the input element. 
+            You'll need to answer the the following questions (and probably more):
+            1. What HTML tag inserts an input element?
+            2. How do I continuously check the contents of the input element without the user hitting enter?
+            3. How do I disable the input bar if the game is not in session?
+    -->
+		<div id="intro" class="card">
+			<h3>Ready?</h3>
+			<button id="start" class="btn btn-success">Start</button>
+		</div>
+		<div id="game">
+			<table> <!-- Hold game header -->
+				<tr>
+					<td>Type State Names</td>
+					<td><input type="text" id="input"></input></td>
+					<td><b id="timer">88:88</b></td>
+					<td><button id="restart" class="btn btn-warning">Restart</button></td>
+				</tr>
+			</table>
+			<hr/>
+			<div id="container"> <!-- Hold states entered --></div>
+			<div id="over">
+				<h1 id="win">You Won!</h1>
+				<h1 id="lost">You Lost</h1>
+				<h3 id="score">Score:50/50</h3>
+				<div id="missed"><p>States Missed:</p></div>
+			</div>
+			<hr/>
+			<b id="info">Hover over a state for info</b>
+		</div>
+    <!-- 
+    2. Implement the running list of states.
+        1. What HTML will be inserted each time a user enters a correct state?
+        2. How can I make sure the user can see all the states he/she has
+        already entered?
+        3. How will I trigger the network request to get a state's senators on
+        hover?
+        4. How will I seperate the entered states from missed states when the game is over if the user lost the game?
+    -->
+
+    <!-- 
+    3. Implement the timer. This is almost all JavaScript. 
+     -->
+
+    <!--
+    4. Implement the start button. The start button must activate the input box to allow input start the timer.
+    -->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="index.js" type="text/javascript"></script>
+
+</body>
+
+</html>
